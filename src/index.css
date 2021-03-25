@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:   'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,47 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Clear{
+  background-image: url("./Componente/Clear.jpg");
+  height: 100vh;
+}
+.ClearNight{
+  background-image: url("./Componente/ClearNight.jpg");
+  height: 100vh;
+}
+.Clouds{
+  background-image: url("./Componente/Clouds.jpg");
+  height: 100vh;
+}
+.Drizzle{
+  background-image: url("./Componente/Drizzle.jpg");
+  height: 100vh;
+}
+.Rain{
+  background-image: url("./Componente/Rain.jpg");
+  height: 100vh;
+  
+}
+.Snow{
+  background-image: url("./Componente/Snow.jpg");
+  height: 100vh;
+}
+
+.tarjeta{
+  opacity: 0.56;
+  text-align: center;
+}
+
+.city{
+  padding: 2rem ;
+  margin-bottom: -1.5rem;
+
+}
+.temperatura{
+  color: black;
+  margin-top: -2rem;
+  opacity:1;
+  font-size: 7rem;
 }
