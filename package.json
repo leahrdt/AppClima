@@ -1,5 +1,5 @@
 {
-  "homepage": "https://leahrdt.github.io/AppClima",
+  
   "name": "clima-app",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +21,8 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
   },
+  "homepage":"https://appclimalfr.000webhostapp.com/",
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -33,7 +33,7 @@ export class Clima extends Component {
 
     pedirClima(){
         let ciudad = this.state.tareaActual || this.state.text
-        axios.get("http://api.openweathermap.org/data/2.5/weather?q="+ciudad+",ar&appid=c7ef015fd8c3a18683fb069006991c19").then((resp)=>{
+        axios.get("https://api.openweathermap.org/data/2.5/weather?q="+ciudad+",ar&appid=c7ef015fd8c3a18683fb069006991c19").then((resp)=>{
             let sunrise = resp.data.sys.sunrise ;
             let sunset = resp.data.sys.sunset ;
             let temp = Math.floor(resp.data.main.temp - 273);
@@ -184,10 +184,8 @@ export class Clima extends Component {
                     <li className="bg-transparent p-5 mb-2 bg-light text-dark text-center">
                         <h1 className="temperatura" >{this.state.temp}</h1>
                         <div className="row">
-                        <div className="col-2"></div>
-                        <div className="col-4">Max: {this.state.temp_max} °c</div>
-                        <div className="col-4">Min: {this.state.temp_min} °c</div>
-                        <div className="col-2"></div>
+                        <div className="col-6">Max:{this.state.temp_max} °C</div>
+                        <div className="col-6">Min:{this.state.temp_min} °C</div>
                         </div>
                     </li>
 
@@ -207,7 +205,7 @@ export class Clima extends Component {
                     <li className="tarjeta p-3 mb-2 bg-light text-dark">
                     <div className="row">
                         <div className="col-6">
-                        <div > Presion</div>
+                        <div > Presión</div>
                         </div>
                         <div className="col-6">
                         <div > {this.state.pressure} hPa</div>

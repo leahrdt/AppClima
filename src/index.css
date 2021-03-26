@@ -13,29 +13,51 @@ code {
 }
 
 .Clear{
-  background-image: url("./Componente/Clear.jpg");
-  height: 100vh;
+
+  background: url("./Componente/Clear.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .ClearNight{
-  background-image: url("./Componente/ClearNight.jpg");
-  height: 100vh;
+
+  background: url("./Componente/ClearNight.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
 .Clouds{
-  background-image: url("./Componente/Clouds.jpg");
-  height: 100vh;
+
+  background: url("./Componente/Clouds.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .Drizzle{
-  background-image: url("./Componente/Drizzle.jpg");
-  height: 100vh;
+  background: url("./Componente/Drizzle.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .Rain{
-  background-image: url("./Componente/Rain.jpg");
-  height: 100vh;
+  background: url("./Componente/Rain.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   
 }
 .Snow{
-  background-image: url("./Componente/Snow.jpg");
-  height: 100vh;
+  background: url("./Componente/Snow.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .tarjeta{
