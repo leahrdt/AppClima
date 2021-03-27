@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/AppClima/static/css/main.8f126327.chunk.css",
-    "main.js": "/AppClima/static/js/main.518bf55d.chunk.js",
-    "main.js.map": "/AppClima/static/js/main.518bf55d.chunk.js.map",
+    "main.css": "/AppClima/static/css/main.a406d85b.chunk.css",
+    "main.js": "/AppClima/static/js/main.8a2f950c.chunk.js",
+    "main.js.map": "/AppClima/static/js/main.8a2f950c.chunk.js.map",
     "runtime-main.js": "/AppClima/static/js/runtime-main.c85c8aea.js",
     "runtime-main.js.map": "/AppClima/static/js/runtime-main.c85c8aea.js.map",
     "static/css/2.9e3fb3c4.chunk.css": "/AppClima/static/css/2.9e3fb3c4.chunk.css",
@@ -12,16 +12,16 @@
     "static/js/3.32791434.chunk.js.map": "/AppClima/static/js/3.32791434.chunk.js.map",
     "index.html": "/AppClima/index.html",
     "static/css/2.9e3fb3c4.chunk.css.map": "/AppClima/static/css/2.9e3fb3c4.chunk.css.map",
-    "static/css/main.8f126327.chunk.css.map": "/AppClima/static/css/main.8f126327.chunk.css.map",
+    "static/css/main.a406d85b.chunk.css.map": "/AppClima/static/css/main.a406d85b.chunk.css.map",
     "static/js/2.e8dd076f.chunk.js.LICENSE.txt": "/AppClima/static/js/2.e8dd076f.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/AppClima/static/media/Rain.3d300a78.jpg",
+    "static/media/index.css": "/AppClima/static/media/Thunderstorm.87e0cd90.jpg",
     "static/media/font-awesome.css": "/AppClima/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.c85c8aea.js",
     "static/css/2.9e3fb3c4.chunk.css",
     "static/js/2.e8dd076f.chunk.js",
-    "static/css/main.8f126327.chunk.css",
-    "static/js/main.518bf55d.chunk.js"
+    "static/css/main.a406d85b.chunk.css",
+    "static/js/main.8a2f950c.chunk.js"
   ]
 }
