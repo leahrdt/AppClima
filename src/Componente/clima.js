@@ -55,13 +55,13 @@ export class Clima extends Component {
             let tempp
 
             if (timev >= 19 ){
-                classCity="cityNight"
+                classCity="display-4 cityNight"
                 tempMM="tempNight col-6"
-                tempp="temperaturaNight"
+                tempp=" display-1 temperaturaNight"
                 } else {
-                    classCity="city"
+                    classCity="display-4 city"
                     tempMM="col-6"
-                    tempp="temperatura"
+                    tempp="display-1 temperatura"
                 }
             if (resp.data.weather[0].main==="Thunderstorm"){
                 icon = "fa fa-cloud fa-5x"

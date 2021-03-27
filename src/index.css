@@ -107,13 +107,13 @@ code {
 }
 .temperatura{
   color: black;
-  margin-top: -2rem;
+  margin-top: -3rem;
   opacity:1;
-  font-size: 7rem;
+  font-size: 8rem;
 }
 .temperaturaNight{
   color: white;
-  margin-top: -2rem;
+  margin-top: -3rem;
   opacity:1;
-  font-size: 7rem;
+  font-size: 8rem;
 }
