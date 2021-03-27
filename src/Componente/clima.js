@@ -27,6 +27,9 @@ export class Clima extends Component {
             wew:"",
             nose:"",
             colorText:"",
+            classCity:"city",
+            tempMM:"",
+            tempp:"",
         }
     }
 
@@ -45,42 +48,71 @@ export class Clima extends Component {
             let wallpaper
             let weather_description
             let colorText
+            let classCity
             let time = new Date().toLocaleTimeString()
             let timev = parseInt(time)
-            if (timev < 19 ){
-                colorText="white"
+            let tempMM
+            let tempp
+
+            if (timev >= 19 ){
+                classCity="cityNight"
+                tempMM="tempNight col-6"
+                tempp="temperaturaNight"
                 } else {
-                    colorText="black"
+                    classCity="city"
+                    tempMM="col-6"
+                    tempp="temperatura"
                 }
             if (resp.data.weather[0].main==="Thunderstorm"){
                 icon = "fa fa-cloud fa-5x"
-                wallpaper = "Rain"
-                weather_description = "Lluvias"
+                weather_description = "Tormenta Electrica"
+                if (timev >= 19 ){
+                    wallpaper="Thunderstorm"
+                    } else {
+                    wallpaper="Thunderstorm"
+        }
             }
             if (resp.data.weather[0].main==="Drizzle"){
                 icon = "fa fa-tint fa-5x"
-                wallpaper= "Drizzle"
                 weather_description = "Lloviznas"
+                if (timev >= 19 ){
+                    wallpaper="DrizzleNight"
+                    } else {
+                    wallpaper="Drizzle"
+        }
             }
             if (resp.data.weather[0].main==="Rain"){
                 icon = "fa fa-bolt fa-5x"
-                wallpaper = "Rain"
-                weather_description = "Tormenta Electrica"
+                weather_description = "Lluvia"
+                if (timev >= 19 ){
+                    wallpaper="RainNight"
+                    } else {
+                    wallpaper="Rain"
+        }
             }
             if (resp.data.weather[0].main==="Snow"){
                 icon = "fa fa-snowflake-o fa-5x"
-                wallpaper = "Snow"
                 weather_description = "Nevando"
+                if (timev >= 20 ){
+                    wallpaper="Snow"
+                    } else {
+                    wallpaper="Snow"
+        }
             }
             if (resp.data.weather[0].main==="Clouds"){
                 icon = "fa fa-cloud fa-5x"
-                wallpaper = "Clouds"
                 weather_description = "Parcialmente Nublado"
+                if (timev >= 19 ){
+                    wallpaper="CloudsNight"
+                    } else {
+                    wallpaper="Clouds"
+        }
             }
             if (resp.data.weather[0].main==="Clear"){
                 icon = "fa fa-sun-o fa-5x"
                 weather_description = "Cielo Despejado"
-                        if (timev < 19 ){
+                console.log(timev)
+                        if (timev >= 19 ){
                         wallpaper="ClearNight"
                         } else {
                         wallpaper="Clear"
@@ -116,6 +148,9 @@ export class Clima extends Component {
                 wallpaper:wallpaper,
                 sunset:humanDateFormatSun,
                 sunrise:humanDateFormatSunr,
+                classCity:classCity,
+                tempMM:tempMM,
+                tempp:tempp
             })
         })
     }
@@ -176,16 +211,16 @@ export class Clima extends Component {
 
                 {/* <img style={{height: 1000, width:1000, position: "absolute !important", zIndex: "-222 !important ", backgroundSize:"cover"}}src={wallpaper} ></img> */}
                 <header className=" bg-transparent text-center">
-                    <h1 className="city">{this.state.city}</h1>
+                    <h1 className={this.state.classCity}>{this.state.city}</h1>
                 </header>
 
                 <ul className="list-group">
                     
                     <li className="bg-transparent p-5 mb-2 bg-light text-dark text-center">
-                        <h1 className="temperatura" >{this.state.temp}</h1>
+                        <h1 className={this.state.tempp} >{this.state.temp}</h1>
                         <div className="row">
-                        <div className="col-6">Max:{this.state.temp_max} °C</div>
-                        <div className="col-6">Min:{this.state.temp_min} °C</div>
+                        <div className={this.state.tempMM}>Max:{this.state.temp_max} °C</div>
+                        <div className={this.state.tempMM}>Min:{this.state.temp_min} °C</div>
                         </div>
                     </li>
 

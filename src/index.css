@@ -13,7 +13,6 @@ code {
 }
 
 .Clear{
-
   background: url("./Componente/Clear.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21,8 +20,14 @@ code {
   background-size: cover;
 }
 .ClearNight{
-
   background: url("./Componente/ClearNight.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.Thunderstorm{
+  background: url("./Componente/Thunderstorm.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,8 +35,14 @@ code {
 }
 
 .Clouds{
-
   background: url("./Componente/Clouds.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.CloudsNight{
+  background: url("./Componente/CloudsNight.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,13 +55,26 @@ code {
   -o-background-size: cover;
   background-size: cover;
 }
+.DrizzleNight{
+  background: url("./Componente/DrizzleNight.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .Rain{
   background: url("./Componente/Rain.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+}
+.RainNight{
+  background: url("./Componente/RainNight.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .Snow{
   background: url("./Componente/Snow.jpg") no-repeat center center fixed; 
@@ -61,17 +85,34 @@ code {
 }
 
 .tarjeta{
-  opacity: 0.56;
+  opacity: 0.8;
   text-align: center;
 }
 
 .city{
   padding: 2rem ;
   margin-bottom: -1.5rem;
-
+  color: black !important;
+}
+.cityNight{
+  padding: 2rem ;
+  margin-bottom: -1.5rem;
+  color: white !important;
+}
+.temp{
+  color: black !important;
+}
+.tempNight{
+  color: white !important;
 }
 .temperatura{
   color: black;
+  margin-top: -2rem;
+  opacity:1;
+  font-size: 7rem;
+}
+.temperaturaNight{
+  color: white;
   margin-top: -2rem;
   opacity:1;
   font-size: 7rem;
