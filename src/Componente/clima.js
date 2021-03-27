@@ -36,7 +36,7 @@ export class Clima extends Component {
 
     pedirClima(){
         let ciudad = this.state.tareaActual || this.state.text
-        axios.get("https://api.openweathermap.org/data/2.5/weather?q="+ciudad+",ar&appid=c7ef015fd8c3a18683fb069006991c19").then((resp)=>{
+        axios.get("https://api.openweathermap.org/data/2.5/weather?q="+ciudad+"&appid=c7ef015fd8c3a18683fb069006991c19").then((resp)=>{
             let sunrise = resp.data.sys.sunrise ;
             let sunset = resp.data.sys.sunset ;
             let temp = Math.floor(resp.data.main.temp - 273);
