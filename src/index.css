@@ -13,21 +13,21 @@ code {
 }
 
 .Clear{
-  background: url("./Componente/Clear.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/Clear.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .ClearNight{
-  background: url("./Componente/ClearNight.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/ClearNight.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .Thunderstorm{
-  background: url("./Componente/Thunderstorm.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/Thunderstorm.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,49 +35,49 @@ code {
 }
 
 .Clouds{
-  background: url("./Componente/Clouds.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/Clouds.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .CloudsNight{
-  background: url("./Componente/CloudsNight.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/CloudsNight.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .Drizzle{
-  background: url("./Componente/Drizzle.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/Drizzle.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .DrizzleNight{
-  background: url("./Componente/DrizzleNight.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/DrizzleNight.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .Rain{
-  background: url("./Componente/Rain.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/Rain.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .RainNight{
-  background: url("./Componente/RainNight.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/RainNight.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .Snow{
-  background: url("./Componente/Snow.jpg") no-repeat center center fixed; 
+  background: url("./Wallpapers/Snow.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

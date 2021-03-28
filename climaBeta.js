@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'; 
 import "font-awesome/css/font-awesome.css";
-import Sun from './Sun';
-import Wind from './Wind';
-import Press from './Press';
-import Weather from './Weather';
-import Tempe from './Tempe';
 
 export class Clima extends Component {
     constructor(props) {
@@ -17,7 +12,7 @@ export class Clima extends Component {
             nubosidad: "",
             temp: "",
             temp_min: "",
-            temp_max: "",   
+            temp_max: "",
             sens_term: "",
             pressure: "",
             visibility: "",
@@ -29,6 +24,8 @@ export class Clima extends Component {
             sunrise:"",
             sunset:"",
             wallpaper:"",
+            wew:"",
+            nose:"",
             colorText:"",
             classCity:"city",
             tempMM:"",
@@ -56,7 +53,7 @@ export class Clima extends Component {
             let timev = parseInt(time)
             let tempMM
             let tempp
-            console.log(time)
+
             if (timev >= 19 ){
                 classCity="display-4 cityNight"
                 tempMM="tempNight col-6"
@@ -158,33 +155,51 @@ export class Clima extends Component {
         })
     }
 
+    
+
+    timeDay(){
+        // let time = new Date().toLocaleTimeString()
+        // let timev = parseInt(time)
+        // if (timev < 19 ){
+        //     this.setState({
+        //         wallpaper:"wallpaper",
+        //     })
+        // } else {
+        //     this.setState({
+        //         wallpaper:"aper",
+        //     })
+        // }
+    }
+
     componentDidMount(){  
         this.pedirClima()
+        this.timeDay()
     }
     
-    inputChange(event){
+    inputChange(event){//metodo
         this.setState({tareaActual : event.target.value});
         // console.log(event.target.value)
     }
 
-    agregarTarea(){ // Click
+    agregarTarea(){ //metodo: Click
         this.setState({
             text: this.state.tareaActual
         })
         this.pedirClima()
     }
 
-    keyPress(event){ //Enter, entra a la lista
+    keyPress(event){ //metodo: al apretar enter, entra a la lista
         if (event.code === 'Enter'){
             this.agregarTarea()
         }
     }
+
     
     render() {
         return (
             <div className={this.state.wallpaper} >
                 
-                <div className="">
+                    <div className="">
                     <input className="form-control "  placeholder="Ingrese nombre de la ciudad..."
                     onChange={this.inputChange.bind(this)}
                     value={this.state.tareaActual}
@@ -192,42 +207,72 @@ export class Clima extends Component {
                     ></input>
                     <button className="btn btn-dark btn-block mt-1"
                     onClick={this.agregarTarea.bind(this)}>Buscar clima</button>
-                </div>
+                    </div>
 
-
+                {/* <img style={{height: 1000, width:1000, position: "absolute !important", zIndex: "-222 !important ", backgroundSize:"cover"}}src={wallpaper} ></img> */}
                 <header className=" bg-transparent text-center">
                     <h1 className={this.state.classCity}>{this.state.city}</h1>
                 </header>
 
                 <ul className="list-group">
                     
-                    <Tempe
-                    tempp={this.state.tempp}
-                    temp={this.state.temp}
-                    tempMM={this.state.tempMM}
-                    temp_max={this.state.temp_max}
-                    temp_min={this.state.temp_min}
-                    />
+                    <li className="bg-transparent p-5 mb-2 bg-light text-dark text-center">
+                        <h1 className={this.state.tempp} >{this.state.temp}</h1>
+                        <div className="row">
+                        <div className={this.state.tempMM}>Max:{this.state.temp_max} °C</div>
+                        <div className={this.state.tempMM}>Min:{this.state.temp_min} °C</div>
+                        </div>
+                    </li>
 
-                    <Weather
-                    icon={this.state.icon}
-                    weather_description={this.state.weather_description}
-                    nubosidad={this.state.nubosidad}
-                    visibility={this.state.visibility}
-                    />
+                    <li className="tarjeta p-3 mb-2 bg-light text-dark">
+                        <div className="row">
+                        <div className="col-6">
+                        <i className={this.state.icon}></i>
+                        </div>
+                        <div className="col-6">
+                        <div >{this.state.weather_description}</div> 
+                        <div >Nubosidad: {this.state.nubosidad}%</div>
+                        <div > Visibilidad: {this.state.visibility}</div>
+                        </div>
+                        </div>
+                    </li>
 
-                    <Press
-                    pressure={this.state.pressure} 
-                    />
+                    <li className="tarjeta p-3 mb-2 bg-light text-dark">
+                    <div className="row">
+                        <div className="col-6">
+                        <div > Presión</div>
+                        </div>
+                        <div className="col-6">
+                        <div > {this.state.pressure} hPa</div>
+                        </div>
+                        </div>
+                    </li>
 
-                    <Wind
-                    wind_speed={this.state.wind_speed}
-                    />
-                    
-                    <Sun
-                    sunrise={this.state.sunrise}
-                    sunset={this.state.sunset}
-                    />
+                    <li className="tarjeta p-3 mb-2 bg-light text-dark">
+                    <div className="row">
+                        <div className="col-6">
+                        <div className="fa fa-leaf fa-3x"> </div>
+                        </div>
+                        <div className="col-6">
+                        <div > Velocidad del Viento</div>
+                        <div >{this.state.wind_speed}km/h</div>
+                        </div>
+                        </div>
+                    </li>
+
+                    <li className="tarjeta p-3 mb-2 bg-light text-dark">
+                    <div className="row">
+                        <div className="col-6">
+                        <div>Amanecer <i class="fa fa-sun-o" aria-hidden="true"></i></div>
+                        <div >{this.state.sunrise}</div>
+                        </div>
+                        <div className="col-6">
+                        <div>Atardecer <i class="fa fa-moon-o" aria-hidden="true"></i></div>
+                        <div >{this.state.sunset}</div>
+                        </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         )
